@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mobility Auto Glass</title>
+<meta name="description" content="Fast, fair auto glass repair and replacement. We take your insurance, beat competitor pricing, and get you back on the road today." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @font-face{
+    font-family:'Presdntn';
+    src:url('presdntn.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  }
+  :root{
+    --ink:#0a0a0a; --volt:#f4c01e; --ash:#1c1c1c; --steel:#2e2e2e;
+    --bone:#f5f3ec; --crack-white:#ffffff;
+  }
+  html,body{background:var(--ink);color:var(--bone);font-family:Inter,system-ui,sans-serif;}
+  .font-display{font-family:'Anton',Impact,sans-serif;letter-spacing:.01em;}
+  .font-president{font-family:'Presdntn',Impact,sans-serif;}
+  .font-mono-spec{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;}
+  @keyframes crack-draw{to{stroke-dashoffset:0;}}
+  @keyframes shine{0%{transform:translateX(-120%);}100%{transform:translateX(220%);}}
+  .crack-path{stroke-dasharray:200;stroke-dashoffset:200;animation:crack-draw .55s forwards cubic-bezier(.2,.6,.2,1);}
+</style>
+</head>
+<body class="min-h-screen">
+
+<header class="border-b border-[var(--steel)]">
+  <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-block h-3 w-3 bg-[var(--volt)]"></span>
+      <span class="font-president text-xl tracking-wider">Mobility Auto Glass</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 font-mono-spec text-[var(--bone)]/70">
+      <a href="index.html#services" class="hover:text-[var(--volt)]">Services</a>
+      <a href="index.html#process" class="hover:text-[var(--volt)]">Process</a>
+<a href="videos.html" class="hover:text-[var(--volt)]">What We Do</a>
+      <a href="index.html#reviews" class="hover:text-[var(--volt)]">Reviews</a>
+<a href="https://www.facebook.com/pages/Mobility-Auto-Glass/121765877881329" target="_blank">
+  <img src="fbicon.png" alt="Facebook" style="width:32px; height:32px;">
+</a>
+    </nav>
+    <a href="#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-4 py-2 hover:brightness-110 transition">Get Quote</a>
+  </div>
+</header>
+
+<section class="relative">
+  <div class="mx-auto max-w-7xl px-6 pt-16 pb-10 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-6">
+      <p class="font-mono-spec text-[var(--volt)] mb-5">▍SHOP&nbsp;OPEN · MON–FRI 8A-5P</p>
+      <h1 class="font-display text-[clamp(2.75rem,7vw,6rem)] leading-[0.88]">
+        CRACKED<br/>
+        <span class="relative inline-block">WINDSHIELD?</span><br/>
+        FIXED<span class="text-[var(--volt)]">.</span> TODAY<span class="text-[var(--volt)]">.</span>
+      </h1>
+      <p class="mt-6 max-w-md text-[var(--bone)]/70 text-lg">Same-day repair and replacement. We take your insurance, come to your driveway, and beat our competitor on price.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-4 hover:brightness-110 transition">Get a free quote →</a>
+        <a href="tel:9858578519" class="border border-[var(--steel)] text-[var(--bone)] font-mono-spec px-6 py-4 hover:border-[var(--volt)] hover:text-[var(--volt)] transition">CALL (985) 857-8519</a>
+      </div>
+      <div class="mt-10 grid grid-cols-3 gap-6 max-w-md">
+        <div><div class="font-display text-2xl">15 MIN</div><div class="font-mono-spec text-[var(--bone)]/50 mt-1">avg repair</div></div>
+        <div><div class="font-display text-2xl">AS LOW AS $0</div><div class="font-mono-spec text-[var(--bone)]/50 mt-1">with insurance</div></div>
+        <div><div class="font-display text-2xl">5.0★</div><div class="font-mono-spec text-[var(--bone)]/50 mt-1">200+ reviews</div></div>
+      </div>
+    </div>
+    <div class="lg:col-span-6 ">
+      <svg width="0" height="0" class="absolute" aria-hidden="true">
+        <defs>
+          <clipPath id="windshieldClip" clipPathUnits="objectBoundingBox">
+  <path d="M 0.12,0.05
+           Q 0.07,0.04 0.05,0.10
+           L 0.02,0.84
+           Q 0.01,0.92 0.08,0.96
+           Q 0.5,1.04 0.92,0.96
+           Q 0.99,0.92 0.98,0.84
+           L 0.95,0.10
+           Q 0.93,0.04 0.88,0.05
+           Q 0.5,0.00 0.12,0.05
+           Z"/>
+</clipPath>
+        </defs>
+      </svg>
+
+      <div id="hero-glass" class="relative aspect-[16/9] w-full cursor-crosshair overflow-hidden border border-[var(--steel)] select-none"
+        style="background:linear-gradient(135deg,#0e0e10 0%,#16161a 40%,#0a0a0a 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04),inset 0 60px 120px -40px rgba(244,192,30,.05),0 30px 80px -30px rgba(0,0,0,.8);clip-path:url(#windshieldClip);">
+        <div class="absolute inset-x-0 top-0 h-1/2 opacity-30 pointer-events-none" style="background:linear-gradient(180deg,rgba(255,255,255,.06) 0%,transparent 100%);"></div>
+        <div class="absolute inset-y-0 -left-1/3 w-1/3 pointer-events-none opacity-40" style="background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.08) 50%,transparent 100%);animation:shine 7s ease-in-out infinite;"></div>
+        <div id="hero-tagline" class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 transition-opacity duration-700 opacity-0">
+          <p class="font-mono-spec text-[var(--volt)]">// tagline.exposed</p>
+          <h2 class="font-display text-3xl sm:text-5xl md:text-6xl text-[var(--bone)] leading-[0.95] mt-3">WE FIX THE CRACK.<br/><span class="text-[var(--volt)]">YOU KEEP DRIVING.</span></h2>
+        </div>
+        <div id="hero-hint" class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="flex items-center gap-3 font-mono-spec text-[var(--bone)]/70">
+            <span class="inline-block h-2 w-2 rounded-full bg-[var(--volt)] animate-pulse"></span>tap the glass
+          </div>
+        </div>
+        <svg id="hero-cracks" viewBox="0 0 100 56" preserveAspectRatio="none" class="absolute inset-0 h-full w-full pointer-events-none"></svg>
+        <div class="absolute top-7 left-11 font-mono-spec text-[var(--bone)]/50">PANE.01 · TEMPERED</div>
+        <div class="absolute bottom-6 right-8 font-mono-spec text-[var(--volt)]">IMPACT&nbsp;READY</div>
+      </div>
+    </div>
+  </div>
+
+  <svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="w-full h-8" aria-hidden="true">
+    <path d="M0 20 L120 18 L180 26 L240 12 L320 22 L380 8 L460 24 L540 14 L620 28 L700 10 L780 22 L860 6 L940 26 L1020 14 L1100 24 L1180 10 L1260 22 L1340 14 L1440 20" stroke="#f4c01e" stroke-width="1" fill="none"/>
+    <path d="M180 26 L210 38 M380 8 L400 0 M540 14 L520 0 M700 10 L720 0 M860 6 L840 0 M1020 14 L1040 38 M1180 10 L1160 0 M1340 14 L1320 38" stroke="#f4c01e" stroke-width="0.6" fill="none" opacity="0.6"/>
+  </svg>
+</section>
+
+
+<section id="slideshow">
+  <div class="slideshow-viewport" id="slideshow-viewport">
+    <div class="slideshow-track" id="slideshow-track">
+      <img class="slide">
+      <img class="slide">
+      <img class="slide">
+      <img class="slide">
+    </div>
+  </div>
+</section>
+
+<style>
+  #slideshow {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+  .slideshow-viewport {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: #111;
+  }
+  .slideshow-track {
+    display: flex;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+  }
+  .slide {
+    flex-shrink: 0;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+    transition: opacity 0.6s ease-in-out;
+  }
+  .slide.active {
+    opacity: 1;
+  }
+</style>
+
+<script>
+  (function () {
+    // List the filenames of images sitting in the same folder as this HTML file
+    const images = ['photo1.jpg', 'photo2.jpg', 'photo7.jpg', 'photo4.jpg'];
+    const len = images.length;
+    let idx = 0;
+
+    const viewport = document.getElementById('slideshow-viewport');
+    const track = document.getElementById('slideshow-track');
+    const slots = track.querySelectorAll('.slide');
+
+    // Preload so swaps don't flicker
+    images.forEach(src => { const im = new Image(); im.src = src; });
+
+    function mod(n) { return ((n % len) + len) % len; }
+
+    // Returns the 4 image indices currently held by the 4 slots:
+    // [previous, current, next, buffer-for-next-slide]
+    function order(i) { return [mod(i - 1), mod(i), mod(i + 1), mod(i + 2)]; }
+
+    function render(o) {
+      slots.forEach((img, i) => {
+        img.src = images[o[i]];
+        img.classList.toggle('active', i === 1);
+      });
+    }
+
+    // Recalculates slot width and the resting (centered) position
+    function layout() {
+      const vw = viewport.clientWidth;
+      const slotWidth = vw * 0.6; // how wide each image is; smaller = bigger side peeks
+      slots.forEach(s => s.style.width = slotWidth + 'px');
+      const baseX = vw / 2 - 1.5 * slotWidth;
+      track.dataset.base = baseX;
+      track.dataset.slot = slotWidth;
+      resetPosition();
+    }
+
+    // Snaps the track back to centered, with no animation
+    function resetPosition() {
+      track.style.transition = 'none';
+      track.style.transform = `translateX(${track.dataset.base}px)`;
+      void track.offsetWidth; // force reflow so the next transition isn't skipped
+      track.style.transition = 'transform 1s ease-in-out';
+    }
+
+    // Slides everything one slot to the left
+    function advance() {
+      const base = parseFloat(track.dataset.base);
+      const slotWidth = parseFloat(track.dataset.slot);
+      track.style.transform = `translateX(${base - slotWidth}px)`;
+    }
+
+    // Once the slide finishes, silently swap in the new set of images
+    // and reset position, so it looks like a seamless loop
+    track.addEventListener('transitionend', e => {
+      if (e.propertyName !== 'transform') return;
+      idx = mod(idx + 1);
+      render(order(idx));
+      resetPosition();
+    });
+
+    window.addEventListener('resize', layout);
+
+    layout();
+    render(order(idx));
+
+    setInterval(advance, 4000); // change picture every 4 seconds
+  })();
+</script>
+
+<section class="photo-catalog">
+  <button class="photo-toggle-btn" id="photoToggleBtn" aria-expanded="false" aria-controls="photoGrid">
+    <span class="btn-label">Click to see more photos</span>
+    <svg class="btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+ 
+  <div class="photo-grid-wrapper" id="photoGrid">
+    <div class="photo-grid">
+      <div class="photo-item"><img src="photo1.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo2.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo3.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo4.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo5.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo6.jpg" loading="lazy" alt="Catalog photo 1"></div>
+<div class="photo-item"><img src="photo7.jpg" loading="lazy" alt="Catalog photo 1"></div>
+    </div>
+  </div>
+ 
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo preview" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo preview">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+</section>
+ 
+<style>
+  .photo-catalog {
+    max-width: 1980px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+ 
+  .photo-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border: 1px solid #f4c01e;
+    border-radius: 999px;
+    background: #0a0a0a;
+    color: #f4c01e;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  }
+ 
+  .photo-toggle-btn:hover {
+    background: #f4c01e;
+    border-color: #0a0a0a;
+    color: #0a0a0a;
+  }
+ 
+  .photo-toggle-btn:active {
+    transform: scale(0.98);
+  }
+ 
+  .photo-toggle-btn:focus-visible {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+  }
+ 
+  .btn-arrow {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+ 
+  .photo-toggle-btn[aria-expanded="true"] .btn-arrow {
+    transform: rotate(180deg);
+  }
+ 
+  /* Animated collapse/expand using grid-template-rows trick
+     (animates more reliably across browsers than max-height) */
+  .photo-grid-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.45s ease;
+  }
+ 
+  .photo-grid-wrapper.is-open {
+    grid-template-rows: 1fr;
+  }
+ 
+  .photo-grid-wrapper > .photo-grid {
+    min-height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-top: 24px;
+  }
+ 
+  .photo-grid-wrapper.is-open > .photo-grid {
+    opacity: 1;
+    transition: opacity 0.3s ease 0.1s;
+  }
+ 
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 14px;
+  }
+ 
+  .photo-item {
+    aspect-ratio: 4 / 3;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #eee;
+    cursor: zoom-in;
+  }
+ 
+  .photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+ 
+  .photo-item:hover img {
+    transform: scale(1.04);
+  }
+ 
+  .photo-item:focus-visible {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+  }
+ 
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 10, 10, 0.92);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 1000;
+    padding: 24px;
+    cursor: zoom-out;
+  }
+ 
+  .lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+  }
+ 
+  .lightbox-img {
+    max-width: min(92vw, 1400px);
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    transform: scale(0.96);
+    transition: transform 0.25s ease;
+  }
+ 
+  .lightbox.is-open .lightbox-img {
+    transform: scale(1);
+  }
+ 
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f4c01e;
+    border-radius: 999px;
+    background: #0a0a0a;
+    color: #f4c01e;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+ 
+  .lightbox-close:hover {
+    background: #f4c01e;
+    color: #0a0a0a;
+  }
+ 
+  .lightbox-close:focus-visible {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+  }
+ 
+  @media (prefers-reduced-motion: reduce) {
+    .photo-grid-wrapper,
+    .photo-grid-wrapper > .photo-grid,
+    .btn-arrow,
+    .lightbox,
+    .lightbox-img,
+    .photo-item img {
+      transition: none;
+    }
+  }
+</style>
+ 
+<script>
+  (function () {
+    const btn = document.getElementById('photoToggleBtn');
+    const wrapper = document.getElementById('photoGrid');
+    const label = btn.querySelector('.btn-label');
+ 
+    btn.addEventListener('click', function () {
+      const isOpen = wrapper.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', isOpen);
+      label.textContent = isOpen ? 'Click to hide' : 'Click to see more photos';
+    });
+ 
+    // ---- Lightbox ----
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+    let lastFocusedEl = null;
+ 
+    // Given a thumbnail <img>, figure out the best "full resolution" URL.
+    // Priority: a data-full attribute you set manually > an upscaled
+    // picsum.photos URL (since those thumbnails are capped at 400x300) > the
+    // original src as-is.
+    function getFullResSrc(img) {
+      if (img.dataset.full) return img.dataset.full;
+      if (img.src.includes('picsum.photos')) {
+        return img.src.replace(/\/\d+\/\d+(?=\?|$)/, '/1600/1200');
+      }
+      return img.src;
+    }
+ 
+    function openLightbox(img) {
+      lastFocusedEl = document.activeElement;
+      lightboxImg.src = getFullResSrc(img);
+      lightboxImg.alt = img.alt || '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lightboxClose.focus();
+    }
+ 
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      lightboxImg.src = '';
+      if (lastFocusedEl) lastFocusedEl.focus();
+    }
+ 
+    // Make every photo clickable (and keyboard-accessible)
+    document.querySelectorAll('.photo-item').forEach(function (item) {
+      const img = item.querySelector('img');
+      item.tabIndex = 0;
+      item.setAttribute('role', 'button');
+      item.setAttribute('aria-label', 'View full size: ' + (img.alt || 'photo'));
+ 
+      item.addEventListener('click', function () { openLightbox(img); });
+      item.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(img);
+        }
+      });
+    });
+ 
+    // Click the close button, or the dark backdrop itself, to dismiss.
+    // Clicking the enlarged image should NOT close it.
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+ 
+    // Escape key closes it too
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
+<section id="services" class="bg-[var(--ash)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-12">
+      <div>
+        <p class="font-mono-spec text-[var(--volt)]">// 01 — services</p>
+        <h2 class="font-display text-4xl md:text-6xl mt-3">WHAT WE<br/>ACTUALLY DO.</h2>
+      </div>
+      <p class="max-w-sm text-[var(--bone)]/60">No upsells. No drama. Glass goes in, you go home.</p>
+    </div>
+    <div class="grid lg:grid-cols-4 gap-px bg-[var(--steel)] border border-[var(--steel)]">
+      
+
+<div class="bg-[var(--ink)] p-8 hover:bg-[#111] transition relative">
+<div class="flex items-start justify-between"><span class="font-mono-spec text-[var(--bone)]/40">01</span><span class="font-mono-spec text-[var(--volt)]">from $65</span></div>
+        <h3 class="font-display text-2xl mt-8">Chip & Crack Repair</h3>
+        <p class="mt-4 text-[var(--bone)]/70 leading-relaxed">Resin injection in under 30 min. Stops the spread, keeps the original factory seal.</br></br></p>
+        <div class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec text-[var(--bone)]/40"></div>
+<a href="videos.html" class="block bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-5 text-center hover:brightness-125 transition">Learn More</a>
+      </div>
+      
+
+<div class="bg-[var(--ink)] p-8 hover:bg-[#111] transition relative">
+        <div class="flex items-start justify-between"><span class="font-mono-spec text-[var(--bone)]/40">02</span><span class="font-mono-spec text-[var(--volt)]">from $249</span></div>
+        <h3 class="font-display text-2xl mt-8">Windshield Replacement</h3>
+        <p class="mt-4 text-[var(--bone)]/70 leading-relaxed">OEM-grade glass, urethane cure, ADAS-ready.</br></br></br></p>
+        <div class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec text-[var(--bone)]/40"></div>
+<a href="videos.html#autoglass" class="block bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-5 text-center hover:brightness-125 transition">Learn More</a>
+      </div>
+
+<div class="bg-[var(--ink)] p-8 hover:bg-[#111] transition relative">
+        <div class="flex items-start justify-between"><span class="font-mono-spec text-[var(--bone)]/40">03</span><span class="font-mono-spec text-[var(--volt)]">new glass, same safety</span></div>
+        <h3 class="font-display text-2xl mt-8">ADAS RECALIBRATION</h3>
+        <p class="mt-4 text-[var(--bone)]/70 leading-relaxed">Done in-house, same visit as your glass. Lane assist, auto-braking, and cruise control all confirmed before you leave.</br></p>
+        <div class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec text-[var(--bone)]/40"></div>
+<a href="videos.html#adas" class="block bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-5 text-center hover:brightness-125 transition">Learn More</a>
+      </div>
+
+<div class="bg-[var(--ink)] p-8 hover:bg-[#111] transition relative">
+<div class="flex items-start justify-between"><span class="font-mono-spec text-[var(--bone)]/40">04</span><span class="font-mono-spec text-[var(--volt)]">we come to you</span></div>
+        <h3 class="font-display text-2xl mt-8">Mobile Service</h3>
+        <p class="mt-4 text-[var(--bone)]/70 leading-relaxed">We come to your driveway, office, or job site. 25-mile radius, as soon as the same day.</p>
+        <div class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec text-[var(--bone)]/40"></div>
+<a href="videos.html#mobiles" class="block bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-5 text-center hover:brightness-125 transition">Learn More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="process" class="bg-[var(--ink)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <p class="font-mono-spec text-[var(--volt)]">// 02 — process</p>
+        <h2 class="font-display text-4xl md:text-6xl mt-3 leading-[0.95]">FOUR STEPS.<br/>ZERO<br/><span class="text-[var(--volt)]">RUNAROUND.</span></h2>
+        <p class="mt-6 text-[var(--bone)]/60 max-w-sm">Most quotes take 60 seconds. Most jobs are done before lunch.</p>
+      </div>
+      <ol class="lg:col-span-7 space-y-px bg-[var(--steel)] border border-[var(--steel)]">
+        <li class="bg-[var(--ash)] p-6 flex gap-6 items-baseline"><span class="font-mono-spec text-[var(--volt)] w-10 shrink-0">01</span><div><h3 class="font-display text-2xl">SEND A PHOTO</h3><p class="text-[var(--bone)]/65 mt-2">Email the damage. We size it and quote in minutes.</p></div></li>
+        <li class="bg-[var(--ash)] p-6 flex gap-6 items-baseline"><span class="font-mono-spec text-[var(--volt)] w-10 shrink-0">02</span><div><h3 class="font-display text-2xl">WE'RE A PREFERRED PRO-SHOP</h3><p class="text-[var(--bone)]/65 mt-2">Glass claims are as low as $0 deductible.</p></div></li>
+        <li class="bg-[var(--ash)] p-6 flex gap-6 items-baseline"><span class="font-mono-spec text-[var(--volt)] w-10 shrink-0">03</span><div><h3 class="font-display text-2xl">WE COME TO YOU</h3><p class="text-[var(--bone)]/65 mt-2">Or roll on by. Shop open 8A–5P.</p></div></li>
+        <li class="bg-[var(--ash)] p-6 flex gap-6 items-baseline"><span class="font-mono-spec text-[var(--volt)] w-10 shrink-0">04</span><div><h3 class="font-display text-2xl">DRIVE IN 60 MIN</h3><p class="text-[var(--bone)]/65 mt-2">Safe drive-away time, calibrated and warranted.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="insurance" class="bg-[var(--ash)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <p class="font-mono-spec text-[var(--volt)]">// 03 — vs the big guys</p>
+    <h2 class="font-display text-4xl md:text-6xl mt-3 max-w-3xl leading-[0.95]">SAME INSURANCE.<br/>BETTER SHOP.</h2>
+    <div class="mt-12 grid md:grid-cols-2 gap-px bg-[var(--steel)] border border-[var(--steel)]">
+      <div class="p-8 bg-[var(--ash)]">
+        <div class="flex items-center gap-3"><span class="font-mono-spec text-[var(--bone)]/40">THE BIG CHAIN</span></div>
+        <dl class="mt-8 divide-y divide-[var(--steel)]">
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Call wait</dt><dd class="font-display text-xl text-[var(--bone)]/50 line-through">18 MIN</dd></div>
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Earliest appt</dt><dd class="font-display text-xl text-[var(--bone)]/50 line-through">2 DAYS</dd></div>
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Quote</dt><dd class="font-display text-xl text-[var(--bone)]/50 line-through">$325</dd></div>
+        </dl>
+      </div>
+      <div class="p-8 bg-[var(--ink)]">
+        <div class="flex items-center gap-3"><span class="h-2 w-2 bg-[var(--volt)] inline-block"></span><span class="font-mono-spec text-[var(--volt)]">MOBILITY AUTO GLASS</span></div>
+        <dl class="mt-8 divide-y divide-[var(--steel)]">
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Call wait</dt><dd class="font-display text-xl">RINGS ONCE</dd></div>
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Earliest appt</dt><dd class="font-display text-xl">AS SOON AS TODAY</dd></div>
+          <div class="flex justify-between py-4"><dt class="font-mono-spec text-[var(--bone)]/50">Quote</dt><dd class="font-display text-xl">$276</dd></div>
+        </dl>
+      </div>
+    </div>
+    <p class="mt-8 font-mono-spec text-[var(--bone)]/40">* representative quote — 2015 toyota camry, comprehensive coverage, June 2026.</p>
+  </div>
+</section>
+
+<section id="reviews" class="bg-[var(--ink)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <p class="font-mono-spec text-[var(--volt)]">// 04 — word on the street</p>
+    <h2 class="font-display text-4xl md:text-6xl mt-3 max-w-3xl leading-[0.95]">REVIEWS<span class="text-[var(--volt)]">.</span></h2>
+    <div class="mt-12 grid md:grid-cols-3 gap-px bg-[var(--steel)] border border-[var(--steel)]">
+      <figure class="bg-[var(--ash)] p-8">
+        <div class="font-mono-spec text-[var(--volt)]">★★★★★</div>
+        <blockquote class="font-display text-xl mt-6 leading-snug">“Called the shop and they took me in immediately! Great service and very professional. Got my window replaced and cleaned the broken glass cleaned up. Couldn’t ask for better service.”</blockquote>
+        <figcaption class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec flex justify-between text-[var(--bone)]/60"><span>JUSTIN J.</span><span class="text-[var(--bone)]/40">JUNE 2026</span></figcaption>
+      </figure>
+      <figure class="bg-[var(--ash)] p-8">
+        <div class="font-mono-spec text-[var(--volt)]">★★★★★</div>
+        <blockquote class="font-display text-xl mt-6 leading-snug">“The staff at Mobility Glass are awesome, they went above and beyond to repair my back glass and windshield on 2005 truck.
+They also repaired my sunroof. I highly recommend Mobility Glass for your glass repair/replacement”</blockquote>
+        <figcaption class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec flex justify-between text-[var(--bone)]/60"><span>CARL C.</span><span class="text-[var(--bone)]/40">DECEMBER 2025</span></figcaption>
+      </figure>
+      <figure class="bg-[var(--ash)] p-8">
+        <div class="font-mono-spec text-[var(--volt)]">★★★★★</div>
+        <blockquote class="font-display text-xl mt-6 leading-snug">“I brought my BMW M440i in for a new windshield. The service was top notch. Very informative and professional. I was nervous about having my windshield changed out because I am VERY particular when it comes to the care of my car. Extremely pleased with their work!”</blockquote>
+        <figcaption class="mt-8 pt-5 border-t border-[var(--steel)] font-mono-spec flex justify-between text-[var(--bone)]/60"><span>JAMIE A.</span><span class="text-[var(--bone)]/40">MARCH 2026</span></figcaption>
+      </figure>
+    </div>
+  </div>
+
+</section>
+
+<section id="quote" class="bg-[var(--ink)] text-[var(--volt)]">
+  <div class="mx-auto max-w-7xl px-6 py-24 grid md:grid-cols-12 gap-10 items-end">
+    <div class="md:col-span-7">
+      <p class="font-mono-spec">// the part where you stop reading and call</p>
+      <h2 class="font-display text-[clamp(2.5rem,6vw,5rem)] leading-[0.9] mt-4">EMAIL A PHOTO.<br/>GET A PRICE.<br/>DRIVE AWAY TODAY.</h2>
+    </div>
+    <div class="md:col-span-5 space-y-3">
+      <a href="mailto:mobilityautoglass@gmail.com" class="block bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-5 text-center hover:brightness-125 transition">EMAIL A PHOTO → mobilityautoglass@gmail.com</a>
+      <a href="tel:9858578519" class="block border-2 border-[var(--volt)] font-mono-spec px-6 py-5 text-center hover:bg-[var(--volt)] hover:text-[var(--ink)] transition">CALL (985) 857-8519</a>
+      <a href="https://www.google.com/maps/place/Mobility+Auto+Glass+LLC./@29.6415791,-90.7472895,17z/data=!3m1!4b1!4m6!3m5!1s0x86211a85fbe166db:0x328b4f05d7e4d3cf!8m2!3d29.6415791!4d-90.7447146!16s%2Fg%2F1tdyr4df?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D" class="font-mono-spec text-[var(--ink)]/70 pt-3">
+ SHOP · 837 BAYOU GARDENS BLVD </a>
+    </div>
+  </div>
+
+<svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="w-full h-8" aria-hidden="true">
+    <path d="M0 20 L120 18 L180 26 L240 12 L320 22 L380 8 L460 24 L540 14 L620 28 L700 10 L780 22 L860 6 L940 26 L1020 14 L1100 24 L1180 10 L1260 22 L1340 14 L1440 20" stroke="#f4c01e" stroke-width="1" fill="none"/>
+    <path d="M180 26 L210 38 M380 8 L400 0 M540 14 L520 0 M700 10 L720 0 M860 6 L840 0 M1020 14 L1040 38 M1180 10 L1160 0 M1340 14 L1320 38" stroke="#f4c01e" stroke-width="0.6" fill="none" opacity="0.6"/>
+  </svg>
+</section>
+
+<footer>
+  <div class="mx-auto max-w-7xl px-6 py-10 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 bg-[var(--volt)]"></span><span class="font-president text-xl tracking-wider">Mobility Auto Glass</span><span class="font-mono-spec text-[var(--volt)]">· Est. 2004</span></div>
+    <div class="font-mono-spec text-[var(--volt)]">Licensed · Insured</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const pane = document.getElementById('hero-glass');
+  const svg = document.getElementById('hero-cracks');
+  const tagline = document.getElementById('hero-tagline');
+  const hint = document.getElementById('hero-hint');
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  let cracks = [];
+  let revealed = false;
+
+  function drawCrackAt(x, y){
+    const g = document.createElementNS(SVGNS, 'g');
+    g.setAttribute('style','filter:drop-shadow(0 0 1px rgba(255,255,255,.4));');
+    const c1 = document.createElementNS(SVGNS,'circle');
+    c1.setAttribute('cx',x); c1.setAttribute('cy',y); c1.setAttribute('r','1.2'); c1.setAttribute('fill','#fff'); c1.setAttribute('opacity','.9');
+    g.appendChild(c1);
+    const c2 = document.createElementNS(SVGNS,'circle');
+    c2.setAttribute('cx',x); c2.setAttribute('cy',y); c2.setAttribute('r','3.5'); c2.setAttribute('fill','none'); c2.setAttribute('stroke','#fff'); c2.setAttribute('stroke-width','.15'); c2.setAttribute('opacity','.5');
+    g.appendChild(c2);
+    for(let i=0;i<9;i++){
+      const angle = (i/9)*Math.PI*2 + (i%2?0.2:-0.15);
+      let cx=x, cy=y;
+      const steps = 5 + (i%3);
+      let d = 'M '+x+' '+y;
+      for(let s=0;s<steps;s++){
+        const len = 6 + Math.random()*9;
+        const jitter = (Math.random()-0.5)*0.6;
+        cx += Math.cos(angle+jitter)*len;
+        cy += Math.sin(angle+jitter)*len;
+        d += ' L '+cx.toFixed(1)+' '+cy.toFixed(1);
+      }
+      const p = document.createElementNS(SVGNS,'path');
+      p.setAttribute('d',d); p.setAttribute('stroke','#ffffff');
+      p.setAttribute('stroke-width', i%2===0 ? '0.35':'0.2');
+      p.setAttribute('fill','none'); p.setAttribute('opacity','.85');
+      p.setAttribute('class','crack-path');
+      p.style.animationDelay = (i*0.03)+'s';
+      g.appendChild(p);
+    }
+    svg.appendChild(g);
+    cracks.push(g);
+    while(cracks.length>3){ const old=cracks.shift(); svg.removeChild(old); }
+  }
+
+  function reveal(){
+    revealed = true;
+    tagline.classList.remove('opacity-0');
+    tagline.classList.add('opacity-100');
+    hint.style.display='none';
+  }
+
+  function handleTap(e){
+    const rect = pane.getBoundingClientRect();
+    const pt = e.touches ? e.touches[0] : e;
+    const x = ((pt.clientX-rect.left)/rect.width)*100;
+    const y = ((pt.clientY-rect.top)/rect.height)*56;
+    drawCrackAt(x, y);
+    reveal();
+  }
+  pane.addEventListener('click', handleTap);
+  pane.addEventListener('touchstart', handleTap);
+
+  setTimeout(function(){
+    if(!revealed){ drawCrackAt(52, (46*56)/100); reveal(); }
+  }, 1400);
+})();
+</script>
+</body>
+</html>

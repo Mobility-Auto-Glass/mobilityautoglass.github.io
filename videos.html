@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mobility Auto Glass</title>
+<meta name="description" content="Fast, fair auto glass repair and replacement. We take your insurance, beat competitor pricing, and get you back on the road today." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @font-face{
+    font-family:'Presdntn';
+    src:url('presdntn.ttf') format('truetype');
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  }
+  :root{
+    --ink:#0a0a0a; --volt:#f4c01e; --ash:#1c1c1c; --steel:#2e2e2e;
+    --bone:#f5f3ec; --crack-white:#ffffff;
+  }
+  html,body{background:var(--ink);color:var(--bone);font-family:Inter,system-ui,sans-serif;}
+  .font-display{font-family:'Anton',Impact,sans-serif;letter-spacing:.01em;}
+  .font-president{font-family:'Presdntn',Impact,sans-serif;}
+  .font-mono-spec{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;}
+  @keyframes crack-draw{to{stroke-dashoffset:0;}}
+  @keyframes shine{0%{transform:translateX(-120%);}100%{transform:translateX(220%);}}
+  .crack-path{stroke-dasharray:200;stroke-dashoffset:200;animation:crack-draw .55s forwards cubic-bezier(.2,.6,.2,1);}
+</style>
+</head>
+<body class="min-h-screen">
+
+<header>
+  <div class="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <span class="inline-block h-3 w-3 bg-[var(--volt)]"></span>
+      <span class="font-president text-xl tracking-wider">Mobility Auto Glass</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 font-mono-spec text-[var(--bone)]/70">
+      <a href="index.html#services" class="hover:text-[var(--volt)]">Services</a>
+      <a href="index.html#process" class="hover:text-[var(--volt)]">Process</a>
+<a href="videos.html" class="hover:text-[var(--volt)]">What We Do</a>
+      <a href="index.html#reviews" class="hover:text-[var(--volt)]">Reviews</a>
+<a href="https://www.facebook.com/pages/Mobility-Auto-Glass/121765877881329" target="_blank">
+  <img src="fbicon.png" alt="Facebook" style="width:32px; height:32px;">
+</a>
+    </nav>
+    <a href="#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-4 py-2 hover:brightness-110 transition">Get Quote</a>
+  </div>
+</header>
+
+<header class="border-b border-[var(--steel)]">
+  <div class="mx-auto max-w-7xl px-6 h-6 flex items-center justify-between">
+<nav class="hidden md:flex items-center gap-7 font-mono-spec text-[var(--bone)]/70">
+<a href="index.html" class="hover:text-[var(--volt)]">Back to Main Page</a>
+  </div>
+</header>
+
+<section id="rockchip" class="bg-[var(--ash)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="font-mono-spec text-[var(--volt)]">// from $65</p>
+        <h2 class="font-display text-4xl md:text-6xl mt-3 leading-[0.95]">CHIP AND<br/>CRACK REPAIR<span class="text-[var(--volt)]">.</span></h2>
+        <p class="mt-8 text-[var(--bone)]/70 text-lg leading-relaxed">
+          A rock chip is a small impact point in your windshield usually no bigger than a quarter and caused by gravel, debris, or road hazards while driving. It might look minor, but every chip is a weak point in the glass.
+        </p>
+        <p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+          Left untreated, temperature swings, vibration, and everyday road stress can cause that small chip to spread into a long crack, turning a cheap, 15-minute repair into a full windshield replacement. Fixing it early keeps the glass strong, preserves your factory seal, and saves you money.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="index.html#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-4 hover:brightness-110 transition">Get a free quote →</a>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="border border-[var(--steel)] bg-[var(--ink)] overflow-hidden">
+          <div class="px-5 py-4 flex items-center justify-between border-b border-[var(--steel)]">
+            <span class="font-mono-spec text-[var(--bone)]/50">ROCK CHIP REPAIR</span>
+            <span class="font-mono-spec text-[var(--volt)]">PROCESS</span>
+          </div>
+
+          <div class="divide-y divide-[var(--steel)]">
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openLightbox('step1-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="step1-img" src="rc1.jpg" alt="Inspection and assessment" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">01</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">INSPECTION & ASSESSMENT</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  We examine the chip under light to determine its size, depth, and type. This tells us whether it's repairable or if the damage is too severe. Most chips smaller than a quarter qualify for repair.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openLightbox('step2-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="step2-img" src="rc2.jpg" alt="Clean the damage" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">02</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">CLEAN THE DAMAGE</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  Any loose glass, dirt, or debris is carefully removed from the chip using a specialized pit drill and vacuum. A clean impact point ensures the resin bonds properly to the glass.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openLightbox('step3-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="step3-img" src="rc3.jpg" alt="Inject the resin" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">03</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">INJECT THE RESIN</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  A professional-grade injector is placed directly over the chip and used to push optical-clarity resin into every crack and void under controlled pressure, fully filling the damaged area.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openLightbox('step4-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="step4-img" src="rc4.jpg" alt="Cure with UV light" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">04</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">CURE WITH UV LIGHT</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  A UV curing lamp is applied directly over the repaired area. The UV light hardens the resin within minutes, bonding it permanently to the surrounding glass and restoring structural integrity.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openLightbox('step5-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="step5-img" src="rc5.jpg" alt="Polish and final check" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">05</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">POLISH & FINAL CHECK</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  Any excess cured resin on the surface is carefully razored flush, then the area is polished to restore optical clarity. We do a final inspection to confirm the chip is sealed and the glass is strong.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90" onclick="closeLightbox()">
+  <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white font-mono-spec text-2xl leading-none w-10 h-10 flex items-center justify-center border border-white/30 hover:border-[var(--volt)] hover:text-[var(--volt)] transition">✕</button>
+  <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain" onclick="event.stopPropagation()" />
+</div>
+
+<script>
+  function openLightbox(imgId) {
+    const src = document.getElementById(imgId).src;
+    const alt = document.getElementById(imgId).alt;
+    const lb = document.getElementById('lightbox');
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox-img').alt = alt;
+    lb.classList.remove('hidden');
+    lb.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    const lb = document.getElementById('lightbox');
+    lb.classList.add('hidden');
+    lb.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+</script>
+
+<section id="autoglass" class="bg-[var(--ink)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="font-mono-spec text-[var(--volt)]">// from $249</p>
+        <h2 class="font-display text-4xl md:text-6xl mt-3 leading-[0.95]">WINDSHIELD<br/><span class="text-[var(--volt)]">& AUTO GLASS</span><br/>REPLACEMENT.</h2>
+        <p class="mt-8 text-[var(--bone)]/70 text-lg leading-relaxed">
+          A windshield replacement is recommended when damage is too large, too deep, or in the wrong spot to safely repair, such as long cracks, damage in your direct line of sight, or chips near the edge of the glass where structural integrity is compromised. Your windshield isn't just a window, it's a structural part of your vehicle that supports the roof in a rollover and helps your airbags deploy correctly.
+        </p>
+        <p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+          We don't stop at windshields, either. Our team handles all types of auto glass, back glass, door and side windows, quarter glass, and yes, even sunroofs and moonroofs. Whether it's a full replacement or a specialty piece, we source OEM-grade glass, recalibrate ADAS safety systems where needed, and make sure everything is properly sealed before you drive away.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="index.html#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-4 hover:brightness-110 transition">Get a free quote →</a>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="border border-[var(--steel)] bg-[var(--ink)] overflow-hidden">
+          <div class="px-5 py-4 flex items-center justify-between border-b border-[var(--steel)]">
+            <span class="font-mono-spec text-[var(--bone)]/50">AUTO GLASS REPLACEMENT</span>
+            <span class="font-mono-spec text-[var(--volt)]">PROCESS</span>
+          </div>
+
+          <div class="divide-y divide-[var(--steel)]">
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openGlassLightbox('glass1-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="glass1-img" src="windshieldStep1.jpg" alt="Damage assessment" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">01</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">DAMAGE ASSESSMENT</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  We inspect the full extent of the damage to determine whether repair or full replacement is the right call. Cracks longer than six inches, damage in the driver's line of sight, or chips near the edges typically require replacement.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openGlassLightbox('glass2-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="glass2-img" src="windshieldStep2.jpg" alt="Old glass removal" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">02</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">REMOVE THE OLD GLASS</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  The damaged windshield or glass panel is carefully cut free using specialized tools to avoid damaging the vehicle's frame, paint, or surrounding trim. All old adhesive and debris is cleared from the pinch weld.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openGlassLightbox('glass3-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="glass3-img" src="windshieldStep3.jpg" alt="Frame preparation" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">03</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">PREPARE THE FRAME</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  The frame is cleaned, primed, and prepped to ensure a proper bond. A fresh bead of OEM-grade urethane adhesive is applied around the entire pinch weld to create a watertight, structurally sound seal.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openGlassLightbox('glass4-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="glass4-img" src="windshieldStep4.jpg" alt="New glass installation" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">04</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">INSTALL NEW GLASS</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  The new OEM-grade glass is precisely set into position and pressed firmly into the adhesive. Suction cups and alignment guides ensure the glass seats correctly and evenly across the entire frame.
+                </p>
+              </div>
+            </div>
+
+            <div class="px-5 py-5 flex gap-5 items-start">
+              <div class="shrink-0 flex flex-col items-center gap-1">
+                <button onclick="openGlassLightbox('glass6-img')" class="w-24 h-20 overflow-hidden border border-[var(--steel)] cursor-zoom-in group focus:outline-none">
+                  <img id="glass6-img" src="windshieldStep5.jpg" alt="Final inspection" class="w-full h-full object-cover transition group-hover:scale-105 group-hover:brightness-110" />
+                </button>
+                <span class="font-mono-spec text-[var(--bone)]/25 text-[10px]">click to enlarge</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-3 mb-2">
+                  <span class="font-mono-spec text-[var(--volt)] text-xs">05</span>
+                  <span class="font-mono-spec text-[var(--bone)] text-xs tracking-wide">FINAL INSPECTION & CURE</span>
+                </div>
+                <p class="text-[var(--bone)]/60 text-sm leading-relaxed">
+                  We check every edge for gaps, leaks, or alignment issues before you leave. The windshield is taped to the frame of the vehicle to ensure it stays in place while the adhesive cures. The tape can be removed the next day.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Auto Glass Lightbox overlay -->
+<div id="glass-lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90" onclick="closeGlassLightbox()">
+  <button onclick="closeGlassLightbox()" class="absolute top-5 right-5 text-white font-mono-spec text-2xl leading-none w-10 h-10 flex items-center justify-center border border-white/30 hover:border-[var(--volt)] hover:text-[var(--volt)] transition">✕</button>
+  <img id="glass-lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[85vh] object-contain" onclick="event.stopPropagation()" />
+</div>
+
+<script>
+  function openGlassLightbox(imgId) {
+    const src = document.getElementById(imgId).src;
+    const alt = document.getElementById(imgId).alt;
+    const lb = document.getElementById('glass-lightbox');
+    document.getElementById('glass-lightbox-img').src = src;
+    document.getElementById('glass-lightbox-img').alt = alt;
+    lb.classList.remove('hidden');
+    lb.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeGlassLightbox() {
+    const lb = document.getElementById('glass-lightbox');
+    lb.classList.add('hidden');
+    lb.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeGlassLightbox();
+  });
+</script>
+
+<section id="adas" class="bg-[var(--ash)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <p class="font-mono-spec text-[var(--volt)]">// new glass, same safety</p>
+    <h2 class="font-display text-4xl md:text-6xl mt-3 leading-[0.95]">ADAS<br/><span class="text-[var(--volt)]">RECALIBRATION.</span></h2>
+    <div class="mt-12 grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="text-[var(--bone)]/70 text-lg leading-relaxed">
+ADAS stands for Advanced Driver Assistance Systems, the cameras and sensors built into your windshield area that power features like lane departure warning, automatic emergency braking, adaptive cruise control, and collision alerts. Many of these cameras are mounted directly to the windshield, which means even a fraction of a millimeter of misalignment after a glass replacement can throw off how your car "sees" the road.        </p>
+        <p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+That's why recalibration is necessary. It's a safety step. An uncalibrated system can misread lane lines, brake too late, or miss a hazard entirely. The good news is that for you, it's effortless. Recalibration is built into our replacement process from the start, so there's no extra appointment to schedule and no separate shop to visit. We handle the entire thing in-house, confirm everything's reading correctly before we hand back your keys, and you drive away with your safety systems working exactly as the manufacturer intended.
+        </p>
+<p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+For more information, check out this video by Autel.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="index.html#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-4 hover:brightness-110 transition">Get a free quote →</a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 lg:-mt-36">
+        <div class="border border-[var(--steel)] bg-[var(--ink)] overflow-hidden mx-auto" style="max-width: 400px;">
+          <video
+            class="w-full block"
+            style="aspect-ratio: 9/16;"
+            controls
+            preload="metadata"
+            poster="chip-repair-poster.jpg"
+          >
+            <source src="adasvideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="px-5 py-4 flex items-center justify-between border-t border-[var(--steel)]">
+            <span class="font-mono-spec text-[var(--bone)]/50">ADAS CALIBRATION</span>
+            <span class="font-mono-spec text-[var(--volt)]">EXPLAINED</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mobiles" class="bg-[var(--ink)]">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <p class="font-mono-spec text-[var(--volt)]">// WE COME TO YOU</p>
+    <h2 class="font-display text-4xl md:text-6xl mt-3 leading-[0.95]">MOBILE<br/>SERVICE<span class="text-[var(--volt)]">.</span></h2>
+
+    <div class="mt-12 grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <p class="text-[var(--bone)]/70 text-lg leading-relaxed">
+You don't have to rearrange your whole day to get your auto glass fixed. Our mobile service brings the shop straight to your driveway, your office parking lot, even a job site, so you can keep your day moving while we take care of the glass.
+        </p>
+        <p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+We can often get to you the same day you call, and there's no compromise on quality just because we're not under our own roof. Every mobile job gets the same OEM-grade glass, proper urethane cure times, and ADAS calibration as a job done in-shop. If we can do it at the shop, we can do it in your driveway — chip repairs, full windshield replacements, you name it.
+        </p>
+<p class="mt-4 text-[var(--bone)]/70 text-lg leading-relaxed">
+From Pierre Part in Assumption Parish all the way down to Port Fourchon in Lafourche Parish, we service the local southern Louisiana communities.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="index.html#quote" class="bg-[var(--volt)] text-[var(--ink)] font-mono-spec px-6 py-4 hover:brightness-110 transition">Get a free quote →</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="border border-[var(--steel)] bg-[var(--ink)] overflow-hidden">
+<img src="servicearea.png" alt="Service Area">
+
+        </div>
+      </div>
+    </div>
+  </div>
+<svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="w-full h-8" aria-hidden="true">
+    <path d="M0 20 L120 18 L180 26 L240 12 L320 22 L380 8 L460 24 L540 14 L620 28 L700 10 L780 22 L860 6 L940 26 L1020 14 L1100 24 L1180 10 L1260 22 L1340 14 L1440 20" stroke="#f4c01e" stroke-width="1" fill="none"/>
+    <path d="M180 26 L210 38 M380 8 L400 0 M540 14 L520 0 M700 10 L720 0 M860 6 L840 0 M1020 14 L1040 38 M1180 10 L1160 0 M1340 14 L1320 38" stroke="#f4c01e" stroke-width="0.6" fill="none" opacity="0.6"/>
+  </svg>
+
+</section>
+
+<footer>
+  <div class="mx-auto max-w-7xl px-6 py-10 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex items-center gap-2"><span class="inline-block h-2 w-2 bg-[var(--volt)]"></span><span class="font-president text-xl tracking-wider">Mobility Auto Glass</span><span class="font-mono-spec text-[var(--volt)]">· Est. 2004</span></div>
+    <div class="font-mono-spec text-[var(--volt)]">Licensed · Insured</div>
+  </div>
+</footer>
+
+</html>
